@@ -35,15 +35,37 @@ echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
 sudo systemctl restart systemd-resolved.service
 echo "-Ok"
 
-echo "Creating a temporary folder...(ak)"
-mkdir ak
-cd ak
-echo "-Ok"
-
 sleep 1
 
+echo -e "${yellow}Step 2${clear}!"
 sudo apt update
+sudo apt upgrade
+sudo apt install slim
+sudo apt install lightdm
+sudo apt install ubuntu-desktop
+sudo service slim start
+sudo apt install vanilla-gnome-desktop vanilla-gnome-default-settings
+echo "-Ok"
 
+sleep 2
 
-echo ":)."
+echo -e "${yellow}Step 2${clear}!"
+echo "XRDP installation started..."
+sudo apt install xrdp
+sudo systemctl enable --now xrdp
 
+sleep 2
+
+echo -e "${yellow}Step 3${clear}!"
+echo "3389 Port is opening..."
+sudo ufw allow from any to any port 3389 proto tcp
+echo "-Ok"
+
+sleep 2
+
+if service --status-all | grep xrdp
+  then  echo -e "${green}XRDP services available!. Installation completed...${clear}!"
+else 
+  echo -e "${red}XRDP service not running. Restart service manually or reboot...${clear}!"
+fi
+exit 0

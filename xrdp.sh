@@ -16,7 +16,7 @@ clear
 
 rm xrdp.sh
 
-figlet "Hello"
+figlet Hello
 
 sleep 2
 

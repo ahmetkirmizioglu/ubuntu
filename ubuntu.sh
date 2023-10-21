@@ -1,4 +1,4 @@
-#!/bin/bash
+l#!/bin/bash
 
 red='\033[0;31m'
 green='\033[0;32m'
@@ -50,6 +50,8 @@ echo "-Ok"
 sleep 2
 
 echo -e "${yellow}Step 2${clear}!"
+echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
+echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
 echo "XRDP installation started..."
 sudo apt install xrdp
 sudo systemctl enable --now xrdp

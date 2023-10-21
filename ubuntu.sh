@@ -1,6 +1,10 @@
 #!/bin/bash
 
-echo "Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use"
+RED='\033[0;31m'
+NC='\033[0m'
+
+clear
+echo "${RED}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${NC}"
 echo "1-Google public DNS / 8.8.8.8 and 8.8.4.4 will be added"
 echo "2-Ubuntu GUI and XRDP will be installed for Ubuntu Server"
 echo "3-Port 3386 will be opened"

@@ -13,14 +13,12 @@ clear='\033[0m'
 sudo apt install figlet -y
 clear
 
-rm xrdp.sh
-
 figlet Hello
 
 sleep 2
 
-echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
-echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"
+echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use!${clear}"
+echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}"
 echo -e "---------------------------------------------------------------------------"
 echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}!"
 sleep 2
@@ -46,4 +44,4 @@ sudo apt install xrdp -y
 #sudo systemctl status xrdp
 sudo systemctl restart xrdp
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n xfce-session \n' /etc/xrdp/startwm.sh
-#reboot
+reboot

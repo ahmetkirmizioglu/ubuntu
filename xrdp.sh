@@ -8,8 +8,6 @@ magenta='\033[0;35m'
 cyan='\033[0;36m'
 clear='\033[0m'
 
-
-
 sudo apt install figlet -y 
 
 clear
@@ -17,7 +15,11 @@ clear
 rm xrdp.sh
 
 figlet "Hello"
+
+sleep 2
+
 exit 0
+
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
 echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"
 echo -e "---------------------------------------------------------------------------"

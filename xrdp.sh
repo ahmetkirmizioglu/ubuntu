@@ -16,7 +16,7 @@ clear
 
 file="xrdp.sh"
 
-if [ -f "$file" ] ; then
+if [ -f "$file"* ] ; then
     rm "$file"
     mv "$file".1 "$file"
 fi

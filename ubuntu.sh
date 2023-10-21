@@ -9,6 +9,13 @@ cyan='\033[0;36m'
 clear='\033[0m'
 
 clear
+
+file="ubuntu.sh"
+
+if [ -f "$file" ] ; then
+    rm "$file"
+fi
+
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
 echo -e "${yellow}1-Google public DNS / 8.8.8.8 and 8.8.4.4 will be added${clear}!"
 echo -e "${yellow}2-Ubuntu GUI and XRDP will be installed for Ubuntu Server${clear}!"

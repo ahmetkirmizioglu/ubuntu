@@ -44,5 +44,5 @@ sleep 1
 sudo apt update
 
 
-echo ":)"
+echo ":)."
 

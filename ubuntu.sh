@@ -28,18 +28,20 @@ read input1
 
 echo -e "${yellow}Step 1${clear}!"
 
-echo "Adding nameservers...\n"
+echo "Adding nameservers..."
 echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
 echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
 sudo systemctl restart systemd-resolved.service
-echo "Ok\n"
+echo "-Ok
 
-echo "Creating a temporary folder...(ak)\n"
+echo "Creating a temporary folder...(ak)"
 mkdir ak
 cd ak
-echo "Ok\n"
+echo "-Ok"
 
 sleep 1
+
+sudo apt update
 
 
 echo ":)"

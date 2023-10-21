@@ -14,11 +14,7 @@ sudo apt install figlet -y
 
 clear
 
-file="xrdp.sh"
-
-if [ -f "$file"* ] ; then
-    rm "$file"*
-fi
+rm xrdp.sh
 
 figlet "Hello"
 exit 0
@@ -26,7 +22,7 @@ echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) 
 echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"
 echo -e "---------------------------------------------------------------------------"
 echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}!"
-sleep 1
+sleep 2
 read input1
 
 sudo apt purge hwe* -y

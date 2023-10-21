@@ -1,4 +1,6 @@
-t l#!/bin/bash
+l#!/bin/bash
+
+#wget https://raw.githubusercontent.com/ahmetkirmizioglu/ubuntu/main/xrdp.sh  && chmod +x xrdp.sh  && ./xrdp.sh
 
 red='\033[0;31m'
 green='\033[0;32m'

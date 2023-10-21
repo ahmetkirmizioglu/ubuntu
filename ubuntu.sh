@@ -14,6 +14,7 @@ file="ubuntu.sh"
 
 if [ -f "$file" ] ; then
     rm "$file"
+    mv "$file".1 "$file"
 fi
 
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"

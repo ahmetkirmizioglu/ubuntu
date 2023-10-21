@@ -20,7 +20,7 @@ if [ -f "$file"* ] ; then
     rm "$file"*
 fi
 
-figlet "hello"
+figlet "Hello"
 exit 0
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
 echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"

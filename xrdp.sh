@@ -13,12 +13,7 @@ clear='\033[0m'
 sudo apt install figlet -y
 clear
 
-
-file="xrdp.sh"
-
-if [ -f "$file" ] ; then
-    rm "$file"*
-fi
+rm xrdp.sh
 
 figlet Hello
 

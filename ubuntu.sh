@@ -16,15 +16,15 @@ read input1
 
 echo "Step 1"
 echo "Creating a temporary folder..(ak)"
-mkdir ak
-cd ak
+#mkdir ak
+#cd ak
 
-sleep 1
+#sleep 1
 
-echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
-echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
-sudo systemctl restart systemd-resolved.service
+#echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
+#echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
+#sudo systemctl restart systemd-resolved.service
 
-sleep 1
+#sleep 1
 echo ":)"
 

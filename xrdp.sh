@@ -17,7 +17,7 @@ clear
 file="xrdp.sh"
 
 if [ -f "$file" ] ; then
-    rm "$file".*
+    rm "$file"*
 fi
 
 figlet Hello

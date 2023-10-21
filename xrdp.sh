@@ -8,6 +8,12 @@ magenta='\033[0;35m'
 cyan='\033[0;36m'
 clear='\033[0m'
 
+file="xrdp.sh"
+
+if [ -f "$file" ] ; then
+    rm "$file"
+    mv "$file".1 "$file"
+fi
 
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
 echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"

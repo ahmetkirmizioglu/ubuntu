@@ -1,5 +1,5 @@
 #!/bin/bash
-#adding google nameservers
+#adding Google public DNS
 
 mkdir ak
 cd ak

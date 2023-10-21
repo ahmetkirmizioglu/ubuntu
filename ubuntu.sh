@@ -26,17 +26,21 @@ echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the 
 sleep 1
 read input1
 
-echo "Step 1"
-echo "Creating a temporary folder..(ak)"
-#mkdir ak
-#cd ak
+echo -e "${yellow}Step 1${clear}!"
 
-#sleep 1
+echo "Adding nameservers...\n"
+echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
+echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
+sudo systemctl restart systemd-resolved.service
+echo "Ok\n"
 
-#echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
-#echo 'nameserver 8.8.4.4' >> /etc/resolv.conf
-#sudo systemctl restart systemd-resolved.service
+echo "Creating a temporary folder...(ak)\n"
+mkdir ak
+cd ak
+echo "Ok\n"
 
-#sleep 1
+sleep 1
+
+
 echo ":)"
 

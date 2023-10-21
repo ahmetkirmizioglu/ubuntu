@@ -64,8 +64,12 @@ echo "-Ok"
 sleep 2
 
 if service --status-all | grep xrdp
+
   then  echo -e "${green}XRDP services available!. Installation completed...${clear}!"
-else 
+        echo -e "${green}Server must be restarted, okay?${clear}!"
+        read input1
+        shutdown -r now
+  else 
   echo -e "${red}XRDP service not running. Restart service manually or reboot...${clear}!"
 fi
 exit 0

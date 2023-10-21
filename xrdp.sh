@@ -1,7 +1,5 @@
 l#!/bin/bash
 
-#wget https://raw.githubusercontent.com/ahmetkirmizioglu/ubuntu/main/xrdp.sh  && chmod +x xrdp.sh  && ./xrdp.sh
-
 red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
@@ -13,12 +11,12 @@ clear='\033[0m'
 sudo apt install figlet -y
 clear
 
-figlet Hello
+figlet XFCE+XRDP 
 
 sleep 2
 
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use!${clear}"
-echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}"
+echo -e "${yellow}All old GUI packages, if any, will be removed and reinstalled, okay?${clear}"
 echo -e "---------------------------------------------------------------------------"
 echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}!"
 sleep 2

@@ -11,14 +11,14 @@ clear='\033[0m'
 sudo apt install figlet -y
 clear
 
-figlet XFCE,XRDP FOR UBUNTU
+figlet XFCE,XRDP
 
 sleep 2
 
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use!${clear}"
 echo -e "${yellow}All old GUI packages, if any, will be removed and reinstalled, okay?${clear}"
 echo -e "---------------------------------------------------------------------------"
-echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}!"
+echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}"
 sleep 2
 read input1
 
@@ -42,4 +42,14 @@ sudo apt install xrdp -y
 #sudo systemctl status xrdp
 sudo systemctl restart xrdp
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n xfce-session \n' /etc/xrdp/startwm.sh
-reboot
+
+if service --status-all | grep xrdp
+
+  then  echo -e "${green}XRDP services available!. Installation completed...${clear}"
+        echo -e "${green}Server must be restarted, okay?${clear}!"
+        read input1
+        shutdown -r now
+  else 
+  echo -e "${red}XRDP service not running. Restart service manually or reboot...${clear}"
+fi
+exit 0

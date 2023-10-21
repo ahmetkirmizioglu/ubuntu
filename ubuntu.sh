@@ -9,13 +9,13 @@ cyan='\033[0;36m'
 clear='\033[0m'
 
 clear
-echo -e "${green}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
-echo -e "${green}1-Google public DNS / 8.8.8.8 and 8.8.4.4 will be added${clear}!"
-echo -e "${green}2-Ubuntu GUI and XRDP will be installed for Ubuntu Server${clear}!"
-echo -e "${green}3-Port 3386 will be opened${clear}!"
+echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
+echo -e "${yellow}1-Google public DNS / 8.8.8.8 and 8.8.4.4 will be added${clear}!"
+echo -e "${yellow}2-Ubuntu GUI and XRDP will be installed for Ubuntu Server${clear}!"
+echo -e "${yellow}3-Port 3386 will be opened${clear}!"
 echo -e "---------------------------------------------------------------------------"
-echo -e "${magenta}Did you read what was written above, okay?${clear}!"
-echo -e "${magenta}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}!"
+echo -e "${cyan}Did you read what was written above, okay?${clear}!"
+echo -e "${cyan}Press return to continue - Otherwise press CTRL+C to cancel the script${clear}!"
 sleep 1
 read input1
 

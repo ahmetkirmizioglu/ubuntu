@@ -1,4 +1,4 @@
-l#!/bin/bash
+t l#!/bin/bash
 
 red='\033[0;31m'
 green='\033[0;32m'
@@ -22,7 +22,7 @@ if [ -f "$file" ] ; then
 fi
 
 figlet "hello"
-
+exit 0
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
 echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"
 echo -e "---------------------------------------------------------------------------"

@@ -19,7 +19,7 @@ if [ -f "$file" ] ; then
     mv "$file".1 "$file"
 fi
 
-figlet "${magenta}Hello${clear}"
+figlet "Hello"
 echo -e "${yellow}Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use${clear}!"
 echo -e "${yellow}All old GUI packages will be deleted and reinstalled, okay?${clear}!"
 echo -e "---------------------------------------------------------------------------"

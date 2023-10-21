@@ -1,4 +1,4 @@
-#!/bin/bash.
+#!/bin/bash
 #Written and configured by Ahmet Kirmizioglu (kirmizioglu.net) for public use
 #1-Google public DNS / 8.8.8.8 and 8.8.4.4 will be added
 #2-Ubuntu GUI and XRDP will be installed for Ubuntu Server

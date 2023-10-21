@@ -11,7 +11,7 @@ clear='\033[0m'
 sudo apt install figlet -y
 clear
 
-figlet XFCE,XRDP 
+figlet XFCE,XRDP FOR UBUNTU
 
 sleep 2
 

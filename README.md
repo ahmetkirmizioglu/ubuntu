@@ -1,8 +1,9 @@
-Install XFCE, XRDP with a single script!
+<h1>xrdp.sh</h1>
 
-All old GUI packages, if any, will be removed and reinstalled. This script will enable the XRDP service to start up on boot automatically. When the installation is complete, the server will restart.
+<b>Install XFCE, XRDP with a single script!</b>
 
-Copy and paste this to run
+<i>All old GUI packages, if any, will be removed and reinstalled. This script will enable the XRDP service to start up on boot automatically. When the installation is complete, the server will restart.</i>
 
-wget https://raw.githubusercontent.com/ahmetkirmizioglu/ubuntu/main/xrdp.sh  && chmod +x xrdp.sh  && ./xrdp.sh
+Copy and paste this in the console screen to run it
 
+<blockquote>wget https://raw.githubusercontent.com/ahmetkirmizioglu/ubuntu/main/xrdp.sh  && chmod +x xrdp.sh  && ./xrdp.sh</blockquote>

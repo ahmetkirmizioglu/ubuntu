@@ -42,9 +42,9 @@ sudo apt install xrdp -y
 #sudo systemctl status xrdp
 sudo systemctl restart xrdp
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n xfce-session \n' /etc/xrdp/startwm.sh
+sudo ufw allow from any to any port 3389 proto tcp
 
 if service --status-all | grep xrdp
-
   then  echo -e "${green}XRDP services available!. Installation completed...${clear}"
         echo -e "${green}Server must be restarted, okay?${clear}!"
         rm xrdp.sh

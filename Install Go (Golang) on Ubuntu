@@ -1,0 +1,15 @@
+sudo apt update
+wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
+ls /usr/local/go
+nano ~/.bash_profile
+
+add lines
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+source ~/.bash_profile
+
+go version
